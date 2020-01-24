@@ -23,7 +23,6 @@ trait APITrait
     public static function fetchUserByToken($identifier)
     {
         $response = App::make('CP_User')::getUser($identifier);
-
         return self::processResponse($response);
     }
 

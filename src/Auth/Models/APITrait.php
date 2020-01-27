@@ -28,7 +28,7 @@ trait APITrait
 
 	public static function fetchUserById($id)
 	{
-		$response = App::make('CP_User')::getUsersById($id);
+		$response = App::make('CP_User')::getUsersById([$id]);
 		return self::processResponse($response[0]);
 	}
 

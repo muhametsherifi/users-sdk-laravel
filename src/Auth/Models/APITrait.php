@@ -27,6 +27,13 @@ trait APITrait
         return self::processResponse($response);
     }
 
+	public static function fetchUserById($id)
+	{
+
+		$response = App::make('CP_User')::getUsersById([$id]);
+		return self::processResponse($response[0]);
+	}
+
     public static function create($data)
     {
         $response = App::make('CP_User')::registerUser($data['username'],

@@ -22,6 +22,7 @@ return [
 		'passphrase'    => env('COMPREDICT_AI_CORE_PASSPHRASE', ""),
 	],
 
+
 	'users' => [
 		'admin_key'     => env('COMPREDICT_USERS_ADMIN_KEY', null),
 		'fail_on_error' => env('COMPREDICT_USERS_FAIL_ON_ERROR', false),

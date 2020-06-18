@@ -54,12 +54,6 @@ class LoginController extends Controller
 
 		$this->validateLogin($request);
 
-		if (!$request->filled('tac')) {
-			return $this->sendFailedLoginResponse($request, [
-				"tac" => "Please agree on the terms and conditions first.",
-			]);
-		}
-
 		// If the class is using the ThrottlesLogins trait, we can automatically throttle
 		// the login attempts for this application. We'll key this by the username and
 		// the IP address of the client making these requests into this application.

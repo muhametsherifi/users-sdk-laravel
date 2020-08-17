@@ -2,7 +2,7 @@
     "name": "compredict/users-sdk-laravel",
     "homepage": "https://compredict.de",
     "description": "Compredict's Users API for laravel.",
-    "version": "1.2.6-beta",
+    "version": "1.2.7-beta",
     "keywords": ["laravel", "laravel 5", "compredict", "User Management", "sdk"],
     "type":"library",
     "license":"MIT",

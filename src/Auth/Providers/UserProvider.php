@@ -50,7 +50,7 @@ class UserProvider implements IlluminateUserProvider
             'project' => $user->project,
             'phone_number' => $user->phone_number,
             'is_staff' => $user->is_staff,
-            'models' => $user->models,
+            'models' => $user->algorithms()->algorithms,
         ]);
 
         return $user;
